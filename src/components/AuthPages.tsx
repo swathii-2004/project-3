@@ -15,7 +15,7 @@ const styles = `
       radial-gradient(ellipse 80% 60% at 20% 20%, rgba(99,60,180,0.18) 0%, transparent 60%),
       radial-gradient(ellipse 60% 50% at 80% 80%, rgba(20,120,100,0.15) 0%, transparent 55%);
     font-family: 'DM Sans', sans-serif;
-    padding: 24px;
+    padding: 100px 24px 24px;
   }
 
   .auth-card {
@@ -37,28 +37,6 @@ const styles = `
     top: 0; left: 0; right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
-  }
-
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 32px;
-  }
-
-  .brand-icon {
-    width: 36px; height: 36px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #7c4dff, #00c896);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px;
-  }
-
-  .brand-name {
-    font-family: 'DM Serif Display', serif;
-    font-size: 22px;
-    color: #fff;
-    letter-spacing: -0.3px;
   }
 
   .tab-row {
@@ -424,11 +402,6 @@ export default function AuthPage() {
             <style>{styles}</style>
             <div className="auth-root">
                 <div className="auth-card">
-                    <div className="brand">
-                        <div className="brand-icon">✦</div>
-                        <span className="brand-name">Antigravity</span>
-                    </div>
-
                     <div className="tab-row">
                         <button className={`tab-btn ${mode === 'login' ? 'active' : ''}`} onClick={() => switchTo('login')}>
                             Sign In

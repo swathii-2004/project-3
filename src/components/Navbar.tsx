@@ -8,10 +8,14 @@ const styles = `
     top: 0; left: 0; right: 0;
     z-index: 100;
     font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .nav-bar {
-    margin: 12px 24px;
+    margin: 12px auto;
+    max-width: 1100px;
+    width: calc(100% - 48px);
     padding: 0 20px;
     height: 58px;
     display: flex;
@@ -190,7 +194,9 @@ const styles = `
 
   /* ── Mobile drawer ── */
   .nav-drawer {
-    margin: 0 24px;
+    margin: 0 auto;
+    max-width: 1100px;
+    width: calc(100% - 48px);
     border: 1px solid rgba(255,255,255,0.08);
     border-top: none;
     border-radius: 0 0 18px 18px;
@@ -244,8 +250,8 @@ const styles = `
     .nav-links { display: none; }
     .nav-actions { display: none; }
     .nav-hamburger { display: flex; }
-    .nav-bar { margin: 10px 14px; padding: 0 16px; }
-    .nav-drawer { margin: 0 14px; }
+    .nav-bar { width: calc(100% - 28px); padding: 0 16px; }
+    .nav-drawer { width: calc(100% - 28px); }
   }
 `
 
