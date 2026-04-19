@@ -1,11 +1,8 @@
 // src/components/HeroSection.tsx
-import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '../assets/vite.svg'
 
 function HeroSection() {
-    const [count, setCount] = useState(0)
-
     return (
         <section id="center">
             <div className="hero">
